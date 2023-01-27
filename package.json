@@ -1,0 +1,47 @@
+{
+  "name": "basic-ts-webpack-config",
+  "version": "1.0.0",
+  "description": "Basic config for Typescript and Webpack 5 for a quick project setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve --mode=development --progress",
+    "build": "webpack",
+    "build:prod": "webpack --config webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dementeyolga/basic-ts-webpack-config.git"
+  },
+  "author": "Olga Dementey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dementeyolga/basic-ts-webpack-config/issues"
+  },
+  "homepage": "https://github.com/dementeyolga/basic-ts-webpack-config#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "cssnano": "^5.1.14",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.21",
+    "postcss-cssnext": "^3.1.1",
+    "postcss-import": "^15.1.0",
+    "postcss-loader": "^7.0.2",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "sugarss": "^4.0.1",
+    "ts-loader": "^9.4.2",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  }
+}
