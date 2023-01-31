@@ -23,6 +23,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'ts-loader',
+        exclude: /node_modules/,
       },
       {
         test: /\.(sa|sc|c)ss$/,
@@ -36,14 +37,14 @@ module.exports = {
           'sass-loader',
         ],
       },
-      // {
-      //   test: /\.(svg|woff|woff2|ttf|eot|otf)([\?]?.*)$/,
-      //   use: [
-      //     {
-      //       loader: 'file-loader?name=assets/fonts/[name].[ext]',
-      //     },
-      //   ],
-      // },
+      {
+        test: /\.(svg|woff|woff2|ttf|eot|otf)([\?]?.*)$/,
+        use: [
+          {
+            loader: 'file-loader?name=assets/fonts/[name].[ext]',
+          },
+        ],
+      },
     ],
   },
   plugins: [
